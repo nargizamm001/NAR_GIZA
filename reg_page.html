@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Регистрация — Narrr</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="reg-title">
+    <h1 id="reg-title">Создать аккаунт</h1>
+
+    <form id="registerForm" novalidate>
+      <label for="username">Имя пользователя</label>
+      <input id="username" name="username" type="text" required aria-required="true" minlength="3" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required aria-required="true" />
+
+      <label for="password">Пароль</label>
+      <input id="password" name="password" type="password" required aria-required="true" />
+
+      <label for="confirmPassword">Подтвердите пароль</label>
+      <input id="confirmPassword" name="confirmPassword" type="password" required aria-required="true" />
+
+      <div class="criteria" id="criteria">
+        <div id="cLen" class="bad">• минимум 8 символов</div>
+        <div id="cUpper" class="bad">• хотя бы одна заглавная буква</div>
+        <div id="cLower" class="bad">• хотя бы одна строчная буква</div>
+        <div id="cDigit" class="bad">• хотя бы одна цифра</div>
+        <div id="cSpec" class="bad">• хотя бы один спецсимвол (!@#$%^&*)</div>
+      </div>
+
+      <label style="margin-top:10px"><input id="agree" type="checkbox" /> Я принимаю условия</label>
+
+      <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+
+      <div class="actions">
+        <button type="submit" class="primary" id="registerBtn">Зарегистрироваться</button>
+      </div>
+    </form>
+  </main>
+    <script src="reg.js"></script>
+</body>
+</html>

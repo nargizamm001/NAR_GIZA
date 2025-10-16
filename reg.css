@@ -1,0 +1,13 @@
+
+    body{font-family:system-ui,Arial;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background:linear-gradient(270deg,#4b2e2e ,#ffcc99, var(--bg) 100%);}
+    .card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.08);width:360px}
+    label{display:block;margin-top:12px;font-size:14px}
+    input[type="text"],input[type="email"],input[type="password"]{width:100%;padding:8px;margin-top:6px;border:1px solid #d0d7de;border-radius:6px}
+    .criteria{font-size:13px;color:#666;margin-top:8px}
+    .criteria .bad{color:#c92a2a}
+    .criteria .ok{color:#0a8a3b}
+    .actions{display:flex;gap:8px;margin-top:16px}
+    button{padding:8px 12px;border-radius:6px;border:0;cursor:pointer}
+    .primary{background:#0d6efd;color:#fff}
+    .muted{background:transparent;color:#666;border:1px solid #e3e6ea}
+    .form-message{margin-top:10px;font-size:14px;color:#c92a2a;min-height:18px}

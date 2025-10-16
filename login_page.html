@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Вход — Narrr</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="login-title">
+    <h1 id="login-title">Вход в аккаунт</h1>
+    <p class="lead">Введите свои учетные данные, чтобы продолжить.</p>
+
+    <form id="loginForm" novalidate>
+      <div>
+        <label for="identifier">Email или имя пользователя</label>
+        <input id="identifier" name="identifier" type="text" autocomplete="username email" required aria-required="true" />
+      </div>
+
+      <div>
+        <label for="password">Пароль</label>
+        <div style="display:flex;gap:8px;align-items:center">
+          <input id="password" name="password" type="password" autocomplete="current-password" required aria-required="true" />
+          <button type="button" class="show-pass" id="togglePassword" aria-pressed="false" aria-label="Показать пароль">Показать</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="checkbox"><input id="remember" name="remember" type="checkbox" /> Запомнить</label>
+        <a class="muted-link" href="#" id="forgotLink">Забыли пароль?</a>
+      </div>
+
+      <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+
+      <div class="actions">
+        <button type="submit" class="primary" id="submitBtn">Войти</button>
+        <button type="button" class="secondary" id="registerBtn">Регистрация</button>
+      </div>
+
+      <div class="helper">Или войдите с помощью</div>
+      <div class="social">
+        <button type="button" id="googleBtn">Google</button>
+        <button type="button" id="githubBtn">GitHub</button>
+      </div>
+    </form>
+  </main>
+<script src="login.js"></script>
+</body>
+</html>

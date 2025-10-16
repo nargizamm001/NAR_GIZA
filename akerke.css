@@ -1,0 +1,333 @@
+/* =====================================
+   RESET AND COMMON STYLES
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* =====================================
+   NAVBAR (Bootstrap Override)
+===================================== */
+.navbar.bg-dark {
+    background-color: #4b2e2e !important; /* Коричневый вместо черного */
+}
+
+.navbar-dark .navbar-brand {
+    color: #f5f5dc !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #ffcc99 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f5f5dc !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffcc99 !important;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffcc99 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================================
+   INDEX PAGE STYLES
+===================================== */
+.index {
+    background-color: #EBE7DA;
+    font-family: Arial, sans-serif;
+    color: #4b2e2e;
+}
+
+/* Hero Section */
+.index .hero {
+    text-align: center;
+    padding: 140px 20px 80px 20px;
+}
+
+.index .hero h1 {
+    font-size: 3.2em;
+    margin-bottom: 25px;
+}
+
+.index .hero p {
+    font-size: 1.4em;
+    margin-bottom: 50px;
+}
+
+.index .hero .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.index .btn {
+    background-color: #4b2e2e;
+    color: #fff;
+    padding: 18px 35px;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.index .btn:hover {
+    background-color: #ffcc99;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel Section */
+.index .gallery {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #EBE7DA;
+}
+
+.index .gallery h2 {
+    font-size: 2.5rem;
+    color: #4b2e2e;
+    margin-bottom: 40px;
+}
+
+.index .carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.index .carousel-item img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.index .carousel-caption {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.index .carousel-item:hover .carousel-caption {
+    opacity: 1;
+}
+
+.index .carousel-caption h5 {
+    background-color: rgba(75, 46, 46, 0.8);
+    color: #fff;
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Carousel Arrows */
+.index .carousel-control-prev-icon,
+.index .carousel-control-next-icon {
+    filter: invert(90%);
+    width: 40px;
+    height: 40px;
+}
+
+/* Move Arrows Outside */
+.index .carousel-control-prev,
+.index .carousel-control-next {
+    width: 10%;
+}
+
+.index .carousel-control-prev {
+    left: -60px;
+}
+
+.index .carousel-control-next {
+    right: -60px;
+}
+
+/* Carousel Dots */
+.index .carousel-indicators [data-bs-target] {
+    background-color: #4b2e2e;
+}
+
+.index .carousel-indicators .active {
+    background-color: #ffcc99;
+}
+
+/* =====================================
+   NEW PAGE STYLES
+===================================== */
+.new {
+    background-color: #EBE7DA;
+    font-family: Arial, sans-serif;
+    color: #4b2e2e;
+}
+
+.new .new-arrivals {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.new .new-arrivals h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4b2e2e;
+}
+
+.new .items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.new .item {
+    background-color: #EBE7DA;
+    border: 1px solid #d2b48c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.new .item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.new .item h3 {
+    color: #4b2e2e;
+    margin-top: 10px;
+}
+
+.new .description {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.new .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4b2e2e;
+}
+
+.new .order-btn {
+    background-color: #4b2e2e;
+    color: #fff;
+    padding: 18px 40px;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.new .order-btn:hover {
+    background-color: #806760;
+    transform: translateY(-3px);
+}
+
+/* Back Button */
+.new .new-back {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.new .new-back-btn {
+    background-color: #4b2e2e;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.new .new-back-btn:hover {
+    background-color: #ffcc99;
+    transform: translateY(-3px);
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+.index footer,
+.new footer {
+    background-color: #4b2e2e;
+    color: #EBE7DA;
+    text-align: center;
+    padding: 15px;
+}
+
+/* =====================================
+   MEDIA QUERIES (RESPONSIVE)
+===================================== */
+@media (max-width: 768px) {
+
+    /* Navbar - mobile view */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4b2e2e;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        background-color: #ffcc99;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Carousel arrows move closer */
+    .index .carousel-control-prev {
+        left: -20px;
+    }
+    .index .carousel-control-next {
+        right: -20px;
+    }
+}

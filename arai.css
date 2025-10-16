@@ -1,0 +1,140 @@
+@media (max-width: 768px) {
+  .img-fluid {
+    max-width: 100%;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .contact form {
+    padding: 15px;
+  }
+}
+
+/* === GENERAL STYLES FOR BOTH PAGES === */
+body.about,
+body.contact {
+  background-color: #ebe7da;
+  font-family: Arial, sans-serif;
+  color: #4b2e2e;
+  line-height: 1.6;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #4b2e2e !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  color: #f5f5dc !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: #ffcc99 !important;
+}
+
+.navbar .nav-link {
+  color: #f5f5dc !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffcc99 !important;
+  text-decoration: none !important;
+}
+
+/* === IMAGES === */
+.img-fluid {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* === SOCIAL LINKS (About page) === */
+.social-links .social li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #4b2e2e;
+  transition: transform 0.3s ease;
+}
+
+.social-links .social img {
+  width: 35px;
+  height: 35px;
+}
+
+.social-links .social li a:hover {
+  transform: scale(1.1);
+}
+
+/* Hover colors per network */
+.social-links .as1 a:hover {
+  background: #1877f2;
+}
+
+.social-links .as2 a:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.social-links .as3 a:hover {
+  background: #0088cc;
+}
+
+.social-links .as4 a:hover {
+  background: #0077ff;
+}
+
+/* === CONTACT FORM === */
+.contact .form-section form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-section button {
+  background-color: #4b2e2e;
+  border: none;
+  transition: 0.3s;
+}
+
+.contact .form-section button:hover {
+  background-color: #ffcc99;
+  color: #4b2e2e;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #4b2e2e;
+  color: #ebe7da;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+
