@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "NAR_GIZA",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../OneDrive/Desktop/assignment2WEB/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NAR_GIZA"
+	}
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAR_GIZA — Interactive</title>
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="akerke.css" />
+  <link rel="stylesheet" href="interactive.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Café Leaclerc Logo" width="60" height="60" class="rounded-circle me-2">
+                    Café Leaclerc
+                </a>
+                <!-- button for mobile menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="interactive.html">Interactive</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="container">
+    <h1 class="page-title">Interactive Café Experience</h1>
+
+    <div class="interactive-section">
+      <div class="buttons">
+        <button id="themeToggle" class="btn">🌙 Night</button>
+        <button id="timeBtn" class="btn">Show current time</button>
+        <span id="timeDisplay" class="mono"></span>
+      </div>
+
+      <div class="rating">
+        <h2>Rate your last order</h2>
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+        <span id="ratingValue" class="mono"></span>
+      </div>
+
+      <div class="quotes">
+        <h2>Quote of the Moment</h2>
+        <button id="loadMoreBtn" class="btn">Load random quote</button>
+        <div id="feed" class="feed"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 Café Leaclerc | Team: Nargiza — SE-2401</p>
+  </footer>
+
+  <script src="interactive.js"></script>
+</body>
+</html>
